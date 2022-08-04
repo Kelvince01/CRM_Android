@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/date_range_ll"
+        android:layout_marginBottom="10dp"
+        android:background="@color/grey"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/custom_range_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:text="@string/custom_range"
+            android:textColor="#EFEBE9" />
+
+        <Button
+            android:id="@+id/today_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:text="@string/today"
+            android:textColor="#EFEBE9" />
+        <Button
+            android:id="@+id/yesterday_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/yesterday"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"/>
+        <Button
+            android:id="@+id/this_week_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/this_week"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"/>
+        <Button
+            android:id="@+id/this_month_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/this_month"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"/>
+        <Button
+            android:id="@+id/last_month_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/last_month"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"/>
+        <Button
+            android:id="@+id/year_to_date_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/year_to_date"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/lifetime_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:text="@string/lifetime"
+            android:textColor="#EFEBE9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelLinearLayout"
+        android:background="@color/grey"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+</LinearLayout>

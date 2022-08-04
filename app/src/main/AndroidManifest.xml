@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.timizatechnologies.crm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Permission for accessing storage -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID"
+        tools:node="remove" />
+
+    <application
+        android:name=".CRMApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CRM"
+        tools:targetApi="31">
+        <activity
+            android:name=".SettingsPrivacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeveloperOptionsActivity"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBA3UEEc-9rIaBJ-eCtt6ZzM57RzSDA5hg" />
+
+        <activity
+            android:name=".ui.CustomersMapActivity"
+            android:exported="false"
+            android:label="@string/title_activity_customers_map" />
+        <activity
+            android:name=".ui.accounts.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ui.ViewProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.main.SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".ui.accounts.ForgotPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CRM.NoActionBar" />
+        <activity
+            android:name=".ui.accounts.ResetPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CRM.NoActionBar" />
+        <activity
+            android:name=".ui.main.WelcomeDashboardActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CRM.NoActionBar" />
+        <activity
+            android:name=".ui.main.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ActivityFeedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AnalyticsActivity"
+            android:exported="false"
+            android:label="Analytics" />
+        <activity
+            android:name=".ui.CustomersActivity"
+            android:exported="false"
+            android:label="Customers" />
+        <activity
+            android:name=".ui.OrdersActivity"
+            android:exported="false"
+            android:label="Orders" />
+        <activity
+            android:name=".ui.accounts.CreateAccountActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CRM.NoActionBar" />
+        <activity
+            android:name=".ui.accounts.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CRM.NoActionBar" />
+        <activity
+            android:name=".ui.TasksActivity"
+            android:exported="false"
+            android:label="Tasks" />
+        <activity
+            android:name=".ui.ProductsActivity"
+            android:exported="false"
+            android:label="Products" /> <!-- The below is for the splash screen and we need no action bar and the default theme -->
+        <activity
+            android:name=".ui.main.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CRM.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.WelcomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CRM.NoActionBar" />
+        <activity
+            android:name=".ui.main.HomeActivity"
+            android:exported="false"
+            android:label="Home" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+    </application>
+
+</manifest>

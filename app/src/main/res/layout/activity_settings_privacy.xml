@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/actionbar_container" />
+    <FrameLayout
+        android:background="?background"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/actionbar_container"
+        tools:ignore="MissingConstraints">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <com.timizatechnologies.crm.ui.settings.PersonalisedAdView
+                    android:id="@+id/personalisedAdSwitch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/settings_row_height"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/personalisedAdExplanation"
+                    android:paddingTop="5.0dip"
+                    android:paddingBottom="32.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PHP_TRANS_USER_GDPR_PERSONALIZED_ADVERTISING_EXPLANATION"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/personalisedAdSwitch"
+                    style="@style/LivesportInfoText" />
+                <View
+                    android:id="@+id/delimiter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/personalisedAdExplanation"
+                    style="@style/DividerVertical" />
+                <com.timizatechnologies.crm.ui.settings.AnalyticsView
+                    android:id="@+id/analyticsSwitch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/settings_row_height"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/personalisedAdExplanation" />
+                <TextView
+                    android:id="@+id/analyticsExplanation"
+                    android:paddingTop="5.0dip"
+                    android:paddingBottom="32.0dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PHP_TRANS_USER_GDPR_ANALYTICS_EXPLANATION"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/analyticsSwitch"
+                    style="@style/LivesportInfoText" />
+                <Button
+                    android:id="@+id/btnAgree"
+                    android:visibility="gone"
+                    android:text="@string/PHP_TRANS_AGREE"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/analyticsExplanation"
+                    style="@style/PrimaryButton" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

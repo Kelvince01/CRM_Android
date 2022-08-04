@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        layout="@layout/actionbar_container" />
+    <View
+        android:id="@+id/actionBarDelimiter"
+        android:layout_below="@id/actionbar_container"
+        style="@style/DividerVertical" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/actionBarDelimiter">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/pushNotificationsSettingsDelimit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/DividerVertical" />
+            <TextView
+                android:id="@+id/textView"
+                android:text="Data source overrides"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pushNotificationsSettingsDelimit"
+                style="@style/SettingsHeader" />
+            <View
+                android:id="@+id/pushNotificationsSettingsDelimiter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView"
+                style="@style/DividerVertical" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:text="Enable domain url override"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pushNotificationsSettingsDelimiter"
+                style="@style/SettingText" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/enable_domain_override"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/textView5"
+                app:layout_constraintTop_toBottomOf="@id/textView5"
+                style="@style/LivesportSwitch" />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/domain_override"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:hint="dcp, dcr, fsm, fsf (default dcp)"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/spacing_m"
+                app:layout_constraintStart_toStartOf="@id/textViewCustomFont"
+                app:layout_constraintTop_toBottomOf="@id/textView5" />
+            <View
+                android:id="@+id/delimiterDomainUrlOverride"
+                android:layout_marginTop="@dimen/spacing_m"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/domain_override"
+                style="@style/DividerVertical" />
+            <TextView
+                android:id="@+id/textViewCustomFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:text="Enable developer host override"
+                android:layout_toLeftOf="@id/enable_developer_host_override"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiterDomainUrlOverride"
+                style="@style/SettingText" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/enable_developer_host_override"
+                app:layout_constraintBottom_toBottomOf="@id/developer_host_override"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/textViewCustomFont"
+                app:layout_constraintTop_toTopOf="@id/textViewCustomFont"
+                style="@style/LivesportSwitch" />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/developer_host_override"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:hint="luki, dlouhjak, jarin, celly"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/spacing_m"
+                app:layout_constraintStart_toStartOf="@id/textViewCustomFont"
+                app:layout_constraintTop_toBottomOf="@id/textViewCustomFont" />
+            <View
+                android:id="@+id/delimiterHostUrlOverride"
+                android:layout_marginTop="@dimen/spacing_m"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/developer_host_override"
+                style="@style/DividerVertical" />
+            <TextView
+                android:id="@+id/textView_disableCertificationAuthorityVerification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:text="Enable bypass of CA verification"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiterHostUrlOverride"
+                style="@style/SettingText" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_disableCertificationAuthorityVerification"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:layout_marginStart="@dimen/spacing_m"
+                app:layout_constraintBottom_toBottomOf="@id/textView_disableCertificationAuthorityVerification"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/textView_disableCertificationAuthorityVerification"
+                app:layout_constraintTop_toTopOf="@id/textView_disableCertificationAuthorityVerification"
+                style="@style/LivesportSwitch" />
+            <View
+                android:id="@+id/delimiterBypassCA"
+                android:layout_marginTop="@dimen/spacing_s"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/switch_disableCertificationAuthorityVerification"
+                style="@style/DividerVertical" />
+            <TextView
+                android:id="@+id/textViewCustomFont2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:text="Enable LSTV area geoip override"
+                android:layout_toLeftOf="@id/enable_developer_geoip_override"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiterBypassCA"
+                style="@style/SettingText" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/enable_developer_geoip_override"
+                android:layout_width="75.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginStart="8.0dip"
+                android:layout_marginEnd="@dimen/spacing_l"
+                app:layout_constraintBottom_toBottomOf="@id/delimiterGeoipOverride"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/developer_geoip_override"
+                app:layout_constraintTop_toBottomOf="@id/delimiterBypassCA" />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/developer_geoip_override"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:hint="CZ"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8.0dip"
+                app:layout_constraintStart_toStartOf="@id/textViewCustomFont2"
+                app:layout_constraintTop_toBottomOf="@id/textViewCustomFont2" />
+            <View
+                android:id="@+id/delimiterGeoipOverride"
+                android:layout_marginTop="4.0dip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/developer_geoip_override"
+                style="@style/DividerVertical" />
+            <TextView
+                android:id="@+id/textViewCustomFont3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:text="Force single data context"
+                android:layout_toLeftOf="@id/enable_force_single_context_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiterGeoipOverride"
+                style="@style/SettingText" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/enable_force_single_context_button"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:layout_marginStart="@dimen/spacing_m"
+                app:layout_constraintBottom_toBottomOf="@id/textViewCustomFont3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/textViewCustomFont3"
+                app:layout_constraintTop_toTopOf="@id/textViewCustomFont3"
+                style="@style/LivesportSwitch" />
+            <View
+                android:id="@+id/delimiterForceSingleContext"
+                android:layout_marginTop="@dimen/spacing_m"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/enable_force_single_context_button"
+                style="@style/DividerVertical" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:text="Developer calendar range override"
+                android:layout_toLeftOf="@id/developer_calendar_range_override_reset_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiterForceSingleContext"
+                style="@style/SettingText" />
+            <Button
+                android:id="@+id/developer_calendar_range_override_reset_button"
+                android:layout_marginRight="@dimen/spacing_m"
+                android:text="reset"
+                android:layout_marginEnd="@dimen/spacing_m"
+                app:layout_constraintBottom_toTopOf="@id/delimiterCalendarRangeOverride"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiterForceSingleContext"
+                style="@style/SettingsButton.DeveloperOptions" />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/developer_calendar_range_override_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:digits="\ 1324567890"
+                android:layout_alignParentBottom="true"
+                android:inputType="numberDecimal"
+                android:layout_marginStart="@dimen/spacing_m"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView6" />
+            <View
+                android:id="@+id/delimiterCalendarRangeOverride"
+                android:layout_marginTop="@dimen/spacing_s"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/developer_calendar_range_override_value"
+                style="@style/DividerVertical" />
+            <TextView
+                android:id="@+id/textViewCustomFont4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:text="Schedule midnight refresh"
+                android:layout_toLeftOf="@id/developer_midnight_refresh_start_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiterCalendarRangeOverride"
+                style="@style/SettingText" />
+            <Button
+                android:id="@+id/developer_midnight_refresh_start_button"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:layout_marginTop="@dimen/spacing_m"
+                android:layout_marginRight="@dimen/spacing_m"
+                android:layout_marginBottom="@dimen/spacing_m"
+                android:text="run"
+                android:layout_marginStart="@dimen/spacing_m"
+                android:layout_marginEnd="@dimen/spacing_m"
+                app:layout_constraintBottom_toBottomOf="@id/delimiterMidnightRefresh"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/textViewCustomFont4"
+                app:layout_constraintTop_toBottomOf="@id/delimiterCalendarRangeOverride"
+                style="@style/SettingsButton.DeveloperOptions" />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/developer_midnight_refresh_ttl_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:digits="\ 1324567890"
+                android:layout_alignParentBottom="true"
+                android:inputType="numberDecimal"
+                android:layout_marginStart="@dimen/spacing_m"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewCustomFont4" />
+            <View
+                android:id="@+id/delimiterMidnightRefresh"
+                android:layout_marginTop="@dimen/spacing_s"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/developer_midnight_refresh_ttl_value"
+                style="@style/DividerVertical" />
+            <TextView
+                android:id="@+id/textViewCustomFont9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:text="Schedule push token refresh"
+                android:layout_toLeftOf="@id/developer_midnight_refresh_start_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiterMidnightRefresh"
+                style="@style/SettingText" />
+            <Button
+                android:id="@+id/developer_fcm_token_refresh_start_button"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:layout_marginTop="@dimen/spacing_m"
+                android:layout_marginRight="@dimen/spacing_m"
+                android:layout_marginBottom="@dimen/spacing_m"
+                android:text="run"
+                android:layout_marginStart="@dimen/spacing_m"
+                android:layout_marginEnd="@dimen/spacing_m"
+                app:layout_constraintBottom_toBottomOf="@id/delimiterFCMTokenRefresh"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/textViewCustomFont4"
+                app:layout_constraintTop_toBottomOf="@id/delimiterMidnightRefresh"
+                style="@style/SettingsButton.DeveloperOptions" />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/developer_fcm_token_refresh_ttl_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:text="20"
+                android:digits="\ 1324567890"
+                android:layout_alignParentBottom="true"
+                android:inputType="numberDecimal"
+                android:layout_marginStart="@dimen/spacing_m"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewCustomFont9"
+                style="@style/LivesportEditText" />
+            <View
+                android:id="@+id/delimiterFCMTokenRefresh"
+                android:layout_marginTop="@dimen/spacing_s"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/developer_fcm_token_refresh_ttl_value"
+                style="@style/DividerVertical" />
+            <TextView
+                android:id="@+id/textViewCustomFont5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:text="Analytics debug"
+                android:layout_toLeftOf="@id/enable_analytics_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiterFCMTokenRefresh"
+                style="@style/SettingText" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/enable_analytics_button"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:layout_marginStart="@dimen/spacing_m"
+                app:layout_constraintBottom_toBottomOf="@id/textViewCustomFont5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/textViewCustomFont5"
+                app:layout_constraintTop_toTopOf="@id/textViewCustomFont5"
+                style="@style/LivesportSwitch" />
+            <View
+                android:id="@+id/delimiterAnalyticsDebug"
+                android:layout_marginTop="@dimen/spacing_m"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/enable_analytics_button"
+                style="@style/DividerVertical" />
+            <TextView
+                android:id="@+id/firebase_ab_testing_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:text="Instance Id Token (for A/B Testing): "
+                android:layout_toLeftOf="@id/enable_analytics_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiterAnalyticsDebug"
+                style="@style/SettingText" />
+            <TextView
+                android:textColor="?android:textColorSecondary"
+                android:id="@+id/firebase_ab_testing_token"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_m"
+                android:layout_marginRight="@dimen/spacing_m"
+                android:text="INSTANCE_TOKEN"
+                android:layout_marginEnd="@dimen/spacing_m"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/firebase_ab_testing_label"
+                style="@style/SettingText" />
+            <View
+                android:id="@+id/delimiterFirebaseABTesting"
+                android:layout_marginTop="@dimen/spacing_m"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/firebase_ab_testing_token"
+                style="@style/DividerVertical" />
+            <TextView
+                android:id="@+id/textViewCustomFont6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:text="Debug notification"
+                android:layout_toLeftOf="@id/debug_notification_on_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiterFirebaseABTesting"
+                style="@style/SettingText" />
+            <Button
+                android:id="@+id/debug_notification_on_button"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:layout_marginRight="@dimen/spacing_m"
+                android:text="@string/debug_notification_uri_query_value_on"
+                android:layout_toLeftOf="@id/debug_notification_off_button"
+                android:layout_marginStart="@dimen/spacing_m"
+                android:layout_marginEnd="@dimen/spacing_m"
+                app:layout_constraintBottom_toBottomOf="@id/textViewCustomFont6"
+                app:layout_constraintEnd_toStartOf="@id/debug_notification_off_button"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/textViewCustomFont6"
+                app:layout_constraintTop_toTopOf="@id/textViewCustomFont6"
+                style="@style/SettingsButton.DeveloperOptions" />
+            <Button
+                android:id="@+id/debug_notification_off_button"
+                android:layout_marginRight="@dimen/spacing_m"
+                android:text="@string/debug_notification_uri_query_value_off"
+                android:layout_marginEnd="@dimen/spacing_m"
+                app:layout_constraintBottom_toBottomOf="@id/textViewCustomFont6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textViewCustomFont6"
+                style="@style/SettingsButton.DeveloperOptions" />
+            <View
+                android:id="@+id/delimiterDebugNotification"
+                android:layout_marginTop="@dimen/spacing_m"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/debug_notification_off_button"
+                style="@style/DividerVertical" />
+            <View
+                android:id="@+id/delimiterTestAds"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/spacing_m"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiterDebugNotification"
+                style="@style/DividerVertical" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchNotifications"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:layout_marginStart="@dimen/spacing_m"
+                app:layout_constraintBottom_toBottomOf="@id/buttonNotifications"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/buttonNotifications"
+                style="@style/LivesportSwitch" />
+            <Button
+                android:id="@+id/buttonNotifications"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:layout_marginTop="@dimen/spacing_m"
+                android:layout_marginRight="@dimen/spacing_m"
+                android:layout_marginBottom="@dimen/spacing_m"
+                android:text="Show"
+                android:layout_marginStart="@dimen/spacing_m"
+                android:layout_marginEnd="@dimen/spacing_m"
+                app:layout_constraintEnd_toStartOf="@id/switchNotifications"
+                app:layout_constraintStart_toEndOf="@id/textViewNotifications"
+                app:layout_constraintTop_toBottomOf="@id/delimiterTestAds"
+                style="@style/SettingsButton.DeveloperOptions" />
+            <TextView
+                android:id="@+id/textViewNotifications"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="Last notifications list"
+                app:layout_constraintBottom_toBottomOf="@id/buttonNotifications"
+                app:layout_constraintEnd_toStartOf="@id/buttonNotifications"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/buttonNotifications"
+                style="@style/SettingText" />
+            <View
+                android:id="@+id/delimiterNotifications"
+                android:layout_marginTop="@dimen/spacing_s"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/buttonNotifications"
+                style="@style/DividerVertical" />
+            <Button
+                android:id="@+id/buttonAppLovinMediationTest"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:layout_marginTop="@dimen/spacing_m"
+                android:layout_marginRight="@dimen/spacing_m"
+                android:layout_marginBottom="@dimen/spacing_m"
+                android:text="Show"
+                android:layout_marginStart="@dimen/spacing_m"
+                android:layout_marginEnd="@dimen/spacing_m"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiterNotifications"
+                style="@style/SettingsButton.DeveloperOptions" />
+            <TextView
+                android:id="@+id/textViewAppLovinMediationTest"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:text="Applovin Mediation Debugger"
+                app:layout_constraintBottom_toBottomOf="@id/buttonAppLovinMediationTest"
+                app:layout_constraintEnd_toStartOf="@id/buttonAppLovinMediationTest"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/buttonAppLovinMediationTest"
+                style="@style/SettingText" />
+            <View
+                android:id="@+id/delimiterAppLovinMediationTest"
+                android:layout_marginTop="@dimen/spacing_s"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/buttonAppLovinMediationTest"
+                style="@style/DividerVertical" />
+            <TextView
+                android:id="@+id/components_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:text="Components"
+                android:layout_toLeftOf="@id/debug_notification_on_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiterAppLovinMediationTest"
+                style="@style/SettingText" />
+            <Button
+                android:id="@+id/components_button"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:layout_marginRight="@dimen/spacing_m"
+                android:text="Open"
+                android:layout_toLeftOf="@id/debug_notification_off_button"
+                android:layout_marginStart="@dimen/spacing_m"
+                android:layout_marginEnd="@dimen/spacing_m"
+                app:layout_constraintBottom_toBottomOf="@id/components_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/components_text"
+                app:layout_constraintTop_toTopOf="@id/components_text"
+                style="@style/SettingsButton.DeveloperOptions" />
+            <View
+                android:id="@+id/delimiterForceNewDetail"
+                android:layout_marginTop="@dimen/spacing_s"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/components_button"
+                style="@style/DividerVertical" />
+            <TextView
+                android:id="@+id/textViewCustomFont8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:text="Force use new details"
+                android:layout_toLeftOf="@id/enable_force_new_detail_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiterForceNewDetail"
+                style="@style/SettingText" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/enable_force_new_detail_button"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:layout_marginStart="@dimen/spacing_m"
+                app:layout_constraintBottom_toBottomOf="@id/textViewCustomFont8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/textViewCustomFont3"
+                app:layout_constraintTop_toTopOf="@id/textViewCustomFont8"
+                style="@style/LivesportSwitch" />
+            <View
+                android:id="@+id/delimiterFavs"
+                android:layout_marginTop="@dimen/spacing_s"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/enable_force_new_detail_button"
+                style="@style/DividerVertical" />
+            <Button
+                android:id="@+id/myGames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:layout_marginTop="@dimen/spacing_m"
+                android:layout_marginBottom="@dimen/spacing_m"
+                android:text="My Games"
+                android:layout_marginStart="@dimen/spacing_m"
+                app:layout_constraintEnd_toStartOf="@id/myTeams"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiterFavs"
+                style="@style/SettingsButton.DeveloperOptions" />
+            <Button
+                android:id="@+id/myTeams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_m"
+                android:layout_marginTop="@dimen/spacing_m"
+                android:layout_marginBottom="@dimen/spacing_m"
+                android:text="My Teams"
+                android:layout_marginStart="@dimen/spacing_m"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/myGames"
+                app:layout_constraintTop_toBottomOf="@id/delimiterFavs"
+                style="@style/SettingsButton.DeveloperOptions" />
+            <View
+                android:id="@+id/delimiterEnd"
+                android:layout_marginTop="@dimen/spacing_s"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/enable_force_new_detail_button"
+                style="@style/DividerVertical" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

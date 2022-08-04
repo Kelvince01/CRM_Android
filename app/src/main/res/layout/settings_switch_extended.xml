@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/switchLabelExtended"
+        android:paddingTop="14.0dip"
+        android:paddingBottom="@dimen/spacing_s"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:paddingStart="10.0dip"
+        app:layout_constraintBottom_toTopOf="@id/extraInfo"
+        app:layout_constraintEnd_toStartOf="@id/switchExtended"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/SettingText" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/extraInfo"
+        android:paddingBottom="@dimen/spacing_l"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:paddingEnd="10.0dip"
+        app:layout_constraintBottom_toTopOf="@id/delimiterExtended"
+        app:layout_constraintEnd_toEndOf="@id/switchLabelExtended"
+        app:layout_constraintStart_toStartOf="@id/switchLabelExtended"
+        app:layout_constraintTop_toBottomOf="@id/switchLabelExtended"
+        style="@style/SettingText.ExtraInfo" />
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchExtended"
+        android:layout_marginStart="@dimen/spacing_l"
+        app:layout_constraintBottom_toTopOf="@id/delimiterExtended"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/switchLabelExtended"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/LivesportSwitch" />
+    <View
+        android:id="@+id/delimiterExtended"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/extraInfo"
+        style="@style/DividerVertical" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/message_label"
+    android:layout_width="fill_parent"
+    android:hint="@string/PHP_TRANS_PORTABLE_SETTINGS_FEEDBACK_TEXT"
+    style="@style/LivesportInputForm.Message"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/message_text"
+        android:inputType="textMultiLine"
+        style="@style/LivesportInputTextStyle.Message" />
+</com.google.android.material.textfield.TextInputLayout>

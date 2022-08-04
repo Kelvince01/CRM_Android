@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/darkModeHeader"
+        android:text="@string/PHP_TRANS_THEME_NORMAL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/SettingsHeader" />
+    <View
+        android:id="@+id/darkModeDelimiter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/darkModeHeader"
+        style="@style/DividerVertical" />
+    <com.timizatechnologies.core.ui.switch_.SwitchView
+        android:id="@+id/darkModeSwitch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:iconStart="@drawable/icon_01_action_dark_mode"
+        app:layout_constraintTop_toBottomOf="@id/darkModeDelimiter" />
+    <com.timizatechnologies.core.ui.switch_.SwitchView
+        android:id="@+id/darkModeSystemDefault"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:iconStart="@drawable/icon_05_settings_phone_settings"
+        app:layout_constraintTop_toBottomOf="@id/darkModeSwitch" />
+</merge>

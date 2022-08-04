@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/root_view"
+    android:background="@color/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        layout="@layout/actionbar_container" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/actionbar_container">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/login_logout_button"
+                style="@style/PrimaryButton.Red"
+                android:layout_marginTop="@dimen/settings_user_section_margin"
+                android:text="@string/PHP_TRANS_USER_BUTTON_LOGOUT"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delimiter_left" />
+
+            <LinearLayout
+                android:id="@+id/user_section_favouritecompetions"
+                style="@style/SettingsContainer"
+                app:layout_constraintEnd_toStartOf="@id/delimiter_left"
+                app:layout_constraintTop_toBottomOf="@id/user_profile_user_email">
+
+                <TextView
+                    android:id="@+id/user_profile_popular_count"
+                    style="@style/SettingsLoginDetailsValue" />
+
+                <TextView
+                    style="@style/SettingsLoginDetails"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:lineSpacingExtra="@dimen/spacing_xs"
+                    android:text="@string/PHP_TRANS_PORTABLE_FAVOURITE_COMPETITIONS" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_section_mygames"
+                style="@style/SettingsContainer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/user_profile_user_email">
+
+                <TextView
+                    android:id="@+id/user_profile_mygames_count"
+                    style="@style/SettingsLoginDetailsValue" />
+
+                <TextView
+                    style="@style/SettingsLoginDetails"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:lineSpacingExtra="@dimen/spacing_xs"
+                    android:text="@string/PHP_TRANS_PORTABLE_MYGAMES" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_section_myteams"
+                style="@style/SettingsContainer"
+                app:layout_constraintStart_toEndOf="@id/delimiter_right"
+                app:layout_constraintTop_toBottomOf="@id/user_profile_user_email">
+
+                <TextView
+                    android:id="@+id/user_profile_myteams_count"
+                    style="@style/SettingsLoginDetailsValue" />
+
+                <TextView
+                    style="@style/SettingsLoginDetails"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:lineSpacingExtra="@dimen/spacing_xs"
+                    android:text="@string/PHP_TRANS_PORTABLE_MYTEAMS" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/user_profile_user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xl"
+                android:drawablePadding="@dimen/spacing_xl"
+                android:padding="@dimen/spacing_xl"
+                android:textSize="@dimen/text_m"
+                app:drawableTint="@color/fs_support_4"
+                app:drawableTopCompat="@drawable/icon_01_action_user_logged_in"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/login_delete_account_button"
+                style="@style/ActionTextBold"
+                android:layout_marginTop="@dimen/spacing_xxl"
+                android:padding="@dimen/spacing_m"
+                android:text="@string/PHP_TRANS_USER_BUTTON_DELETE_ACCOUNT"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/login_logout_button" />
+
+            <View
+                android:id="@+id/delimiter_left"
+                style="@style/SettingsContainerHorizontalDivider"
+                app:layout_constraintEnd_toStartOf="@id/user_section_mygames"
+                app:layout_constraintTop_toBottomOf="@id/user_profile_user_email" />
+
+            <View
+                android:id="@+id/delimiter_right"
+                style="@style/SettingsContainerHorizontalDivider"
+                app:layout_constraintStart_toEndOf="@id/user_section_mygames"
+                app:layout_constraintTop_toBottomOf="@id/user_profile_user_email" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+<!--LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    xmlns:fresco="http://schemas.android.com/tools"
+    tools:context=".ui.accounts.ProfileActivity"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/profile_photo"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        fresco:placeholderiImage="@drawable/com_facebook_profile_picture_blank_square"
+        android:layout_margin="@dimen/margin_small" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="ID" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Email" />
+
+    <TextView
+        android:id="@+id/permissions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Permissions" />
+
+</LinearLayout-->

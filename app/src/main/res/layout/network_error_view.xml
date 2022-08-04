@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/event_list_activity_loading_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/CenteredBlockingDialogContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/centre_wrap"
+        android:background="@drawable/loading_bg_centre_wrap"
+        android:paddingBottom="@dimen/spacing_s"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/network_error_dialog_max_width"
+        android:layout_marginStart="@dimen/spacing_xl"
+        android:layout_marginEnd="@dimen/spacing_xl">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/text_l"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dialog_title_bar_height"
+            android:text="@string/PHP_TRANS_PORTABLE_ERROR_NO_CONNECTION_TITLE"
+            android:paddingStart="@dimen/spacing_xl"
+            android:paddingEnd="@dimen/spacing_xl"
+            style="@style/ActionbarTitle.AutoSized" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="@dimen/text_s"
+            android:textColor="@color/fs_support_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/PHP_TRANS_PORTABLE_ERROR_NO_CONNECTION_MESSAGE"
+            android:paddingStart="@dimen/spacing_xl"
+            android:paddingEnd="@dimen/spacing_xl" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:id="@+id/try_again_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:text="@string/PHP_TRANS_PORTABLE_ERROR_NO_CONNECTION_BUTTON"
+            android:paddingStart="@dimen/spacing_xl"
+            android:paddingEnd="@dimen/spacing_xl"
+            android:layout_marginEnd="@dimen/spacing_l"
+            style="@style/DialogMaterialButton" />
+    </LinearLayout>
+</RelativeLayout>

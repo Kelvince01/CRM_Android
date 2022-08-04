@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/settings_push_notification"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/groupHeader"
+        android:text="@string/PHP_TRANS_PORTABLE_SETTINGS_PUSH_LABEL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/SettingsHeader" />
+    <View
+        android:id="@+id/pushHeaderDelimiter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/groupHeader"
+        style="@style/DividerVertical" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textColor="@color/fs_primary"
+        android:id="@+id/disabledPushText"
+        android:background="@drawable/bg_list_selector"
+        android:paddingLeft="16.0dip"
+        android:paddingTop="8.0dip"
+        android:paddingRight="15.0dip"
+        android:paddingBottom="8.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:drawableRight="@drawable/ic_next"
+        android:drawableEnd="@drawable/ic_next"
+        android:paddingStart="16.0dip"
+        android:paddingEnd="15.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pushHeaderDelimiter"
+        style="@style/SettingText" />
+    <View
+        android:id="@+id/disabledPushDelimiter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/disabledPushText"
+        style="@style/DividerVertical" />
+    <com.timizatechnologies.core.ui.switch_.SwitchView
+        android:id="@+id/pushSwitch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/settings_row_height"
+        app:iconStart="@drawable/icon_04_notification_on"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/disabledPushDelimiter" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/notificationSettingsLabel"
+        android:background="@drawable/bg_list_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:text="@string/PHP_TRANS_NOTIFICATION_SETTINGS_NOTIFICATION_SETTINGS"
+        android:drawablePadding="@dimen/spacing_l"
+        android:drawableStart="@drawable/icon_01_action_quick_settings"
+        android:drawableEnd="@drawable/ic_next"
+        app:drawableTint="@color/icon_primary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pushSwitch"
+        style="@style/SettingText" />
+    <View
+        android:id="@+id/pushNotificationsSettingsDelimiter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notificationSettingsLabel"
+        style="@style/DividerVertical" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/notificationTTSLabel"
+        android:background="@drawable/bg_list_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:text="@string/PHP_TRANS_TEXT_TO_SPEECH_HELPSCREEN_TITLE"
+        android:drawablePadding="@dimen/spacing_l"
+        android:drawableStart="@drawable/icon_05_settings_voice_notification"
+        android:drawableEnd="@drawable/ic_next"
+        app:drawableTint="@color/icon_primary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pushNotificationsSettingsDelimiter"
+        style="@style/SettingText" />
+    <View
+        android:id="@+id/ttsSettingsDelimiter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notificationTTSLabel"
+        style="@style/DividerVertical" />
+</androidx.constraintlayout.widget.ConstraintLayout>

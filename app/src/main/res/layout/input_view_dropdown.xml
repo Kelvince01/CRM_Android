@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/subject_selector"
+    android:hint="@string/PHP_TRANS_PORTABLE_SETTINGS_FEEDBACK_SUBJECT"
+    style="@style/LivesportDropdownForm"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <AutoCompleteTextView
+        android:id="@+id/subject_type"
+        android:inputType="none"
+        style="@style/LivesportInputTextStyle.Dropdown" />
+</com.google.android.material.textfield.TextInputLayout>

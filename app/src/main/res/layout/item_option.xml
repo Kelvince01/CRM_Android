@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/survicate_item_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/survicate_question_item_margin_top"
+    android:layout_marginBottom="@dimen/survicate_question_item_margin_bottom"
+    android:layout_marginStart="@dimen/survicate_question_item_horizontal_margin"
+    android:layout_marginEnd="@dimen/survicate_question_item_horizontal_margin"
+    app:cardCornerRadius="@dimen/survicate_element_radius"
+    app:cardElevation="@dimen/survicate_question_card_elevation"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:descendantFocusability="afterDescendants"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/Widget.Survicate.QuestionOption">
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/survicate_option_button"
+            android:clickable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/survicate_option_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/survicate_question_item_horizontal_padding"
+            android:layout_marginStart="@dimen/survicate_question_item_horizontal_padding"
+            style="@style/Widget.Survicate.QuestionOption.Text" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

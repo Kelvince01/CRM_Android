@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardActivity">
+
+    <activity
+        android:id="@+id/ordersActivity"
+        android:name="com.timizatechnologies.crm.ui.OrdersActivity"
+        android:label="activity_orders"
+        tools:layout="@layout/activity_orders" />
+    <activity
+        android:id="@+id/analyticsActivity"
+        android:name="com.timizatechnologies.crm.ui.AnalyticsActivity"
+        android:label="activity_analytics"
+        tools:layout="@layout/activity_analytics" />
+    <activity
+        android:id="@+id/dashboardActivity"
+        android:name="com.timizatechnologies.crm.ui.main.DashboardActivity"
+        android:label="activity_dashboard"
+        tools:layout="@layout/activity_dashboard" />
+</navigation>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        layout="@layout/actionbar_container" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/actionbar_container">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/pushNotificationsSettingsView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                layout="@layout/settings_push_notification_layout" />
+            <!--com.timizatechnologies.crm.ui.settings.notifications.SettingsUserView
+                android:id="@+id/userView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/pushNotificationsSettingsView"
+                tools:ignore="MissingConstraints" />
+            <com.timizatechnologies.crm.ui.settings.TvSettingsView
+                android:id="@+id/tvSettingsView"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/userView"
+                tools:ignore="MissingConstraints" />
+            <com.timizatechnologies.crm.ui.settings.DarkMode
+                android:id="@+id/darkMode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tvSettingsView"
+                tools:ignore="MissingConstraints" />
+            <com.timizatechnologies.crm.ui.settings.OddsView
+                android:id="@+id/oddsPart"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/darkMode"
+                tools:ignore="MissingConstraints" /-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/moreHeader"
+                android:text="@string/PHP_TRANS_PORTABLE_SETTINGS_OTHER_LABEL"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/SettingsHeader"
+                tools:ignore="MissingConstraints" />
+            <!--
+                            app:layout_constraintTop_toBottomOf="@id/oddsPart"
+-->
+            <View
+                android:id="@+id/moreHeaderDelimiter"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moreHeader"
+                style="@style/DividerVertical" />
+            <!--com.timizatechnologies.crm.ui.settings.SportsPartView
+                android:id="@+id/sportsPart"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/moreHeaderDelimiter" />
+            <com.timizatechnologies.crm.ui.settings.EventSortView
+                android:id="@+id/eventSort"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:iconStart="@drawable/icon_05_settings_order_matches"
+                app:layout_constraintTop_toBottomOf="@id/sportsPart" />
+            <com.timizatechnologies.crm.ui.settings.RateUsView
+                android:id="@+id/rateThisApp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:iconStart="@drawable/icon_05_settings_thumb_up"
+                app:layout_constraintTop_toBottomOf="@id/eventSort" />
+            <com.timizatechnologies.core.ui.text.ArrowTextView
+                android:id="@+id/faq"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:iconStart="@drawable/icon_05_settings_feedback"
+                app:layout_constraintTop_toBottomOf="@id/rateThisApp" />
+            <com.timizatechnologies.crm.ui.settings.ContactUsView
+                android:id="@+id/contactUs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:iconStart="@drawable/icon_05_settings_email"
+                app:layout_constraintTop_toBottomOf="@id/faq" />
+            <com.timizatechnologies.crm.ui.settings.TermsOfUseView
+                android:id="@+id/termsOfUse"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:iconStart="@drawable/icon_05_settings_document"
+                app:layout_constraintTop_toBottomOf="@id/contactUs"
+                tools:ignore="MissingConstraints" />
+            <com.timizatechnologies.crm.ui.settings.PrivacyView
+                android:id="@+id/privacy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:iconStart="@drawable/icon_05_settings_security"
+                app:layout_constraintTop_toBottomOf="@id/termsOfUse"
+                tools:ignore="MissingConstraints" />
+            <com.timizatechnologies.crm.ui.settings.VersionView
+                android:id="@+id/versionLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/privacy" /-->
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/settingsDeveloperOptionsSection"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/settings_row_height"
+                android:text="@string/developer_options"
+                style="@style/SettingText"
+                tools:ignore="MissingConstraints" />
+            <!--
+                            app:layout_constraintTop_toBottomOf="@id/versionLabel"
+            -->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/dialogs_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+
+<!--LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_20sdp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/_20sdp"
+            android:elevation="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_10sdp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_20sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <TextView
+                                android:id="@+id/tvempname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:textSize="@dimen/_20sdp"
+                                android:gravity="center"
+                                android:padding="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:textColor="@android:color/background_dark"/>
+
+                            <androidx.cardview.widget.CardView
+                                app:cardCornerRadius="250dp"
+                                android:layout_marginBottom="30dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_width="96dp"
+                                android:elevation="@dimen/_10sdp"
+                                android:layout_weight="50"
+                                android:layout_height="96dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                app:cardBackgroundColor="@color/white">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    app:cardCornerRadius="250dp"
+                                    android:layout_gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/ivemppic"
+                                        android:layout_width="90dp"
+                                        android:layout_height="90dp"
+                                        android:src="@drawable/ic_default_user"
+                                        android:scaleType="centerCrop"/>
+
+                                </androidx.cardview.widget.CardView>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Account Details"
+                                android:textSize="@dimen/_20sdp"
+                                android:textStyle="bold"
+                                android:padding="@dimen/_10sdp"
+                                android:textColor="@android:color/background_dark"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true">
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/edtempmobile"
+                                        android:hint="Mobile"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Profile Details"
+                                android:textSize="@dimen/_20sdp"
+                                android:textStyle="bold"
+                                android:padding="@dimen/_10sdp"
+                                android:textColor="@android:color/background_dark"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/edtempname"
+                                        android:hint="Name"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/edtememail"
+                                        android:hint="Email"/>
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/edtempdesignation"
+                                        android:hint="Designation"/>
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="100"
+                                android:layout_margin="@dimen/_10sdp">
+
+                                <TextView
+                                    android:layout_width="2dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:text="EmpID# : "
+                                    android:textSize="@dimen/_20sdp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:textSize="@dimen/_20sdp"
+                                    android:id="@+id/tvempid"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/edtempaddress"
+                                        android:hint="Address"/>
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="100"
+                                android:layout_margin="@dimen/_10sdp">
+
+                                <TextView
+                                    android:layout_width="4dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:text="Leave balance: "
+                                    android:textSize="@dimen/_15sdp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="50"
+                                    android:id="@+id/tvempbal"
+                                    android:textSize="@dimen/_15sdp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_10sdp">
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/round_corners_button"
+                                    android:text="Delete Account"
+                                    android:textSize="@dimen/_20sdp"
+                                    android:textColor="#4FBBC0"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:elevation="@dimen/_40sdp"
+                                    android:id="@+id/btndelete"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_10sdp">
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/round_corners_button"
+                                    android:text="Save"
+                                    android:textSize="@dimen/_20sdp"
+                                    android:textColor="#4FBBC0"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    android:elevation="@dimen/_40sdp"
+                                    android:id="@+id/btnupdate"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=""/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </ScrollView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+</LinearLayout-->

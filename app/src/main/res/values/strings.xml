@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">CRM</string>
+
+    <!-- Facebook Credentials -->
+    <string name="facebook_app_id">917034189138736</string>
+    <string name="fb_login_protocol_scheme">fb917034189138736</string>
+    <string name="facebook_client_token">7f5ca10db03cbb12e5f931859090fea5</string>
+
+    <string name="config_lsid_server_domain">lsid.eu</string>
+
+    <string name="text_intro1">Quick Overview</string>
+    <string name="text_intro2">Analytics</string>
+    <string name="text_intro3">Dashboard Feeds</string>
+    <string name="text_intro4">Get Notified</string>
+    <string name="desc_intro1">Quickly visualize important business metrics. The overview in the home tab shows the most important metrics to monitor how your business is doing in real time.</string>
+    <string name="desc_intro2">Dive deeply into charts to extract valuable insights and come up with data driven product decisions to boost the success of your business</string>
+    <string name="desc_intro3">View your sales feed, orders, customers, products and employees.</string>
+    <string name="desc_intro4">Receive notifications when critical situations occur to stay on top of everything important.</string>
+
+    <string name="swipe_left_for_register">No Account? Register</string>
+    <string name="login">Login</string>
+    <string name="facebook_login">Facebook Login</string>
+    <string name="password">Password</string>
+    <string name="e_mail">Email</string>
+    <string name="tag">Let\'s join us and \nBuild your relationship with others</string>
+    <string name="swipe_right_for_login">Already have Account? Login</string>
+    <string name="register">Register</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="re_type_password">Re-type Password</string>
+    <string name="your_name">Full Name</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_orders">Orders</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="menu_activity">Activity</string>
+    <string name="menu_logout">Logout</string>
+    <string name="nav_header_title">Timiza Technologies</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_welcome_dash">Welcome to Dashboard!</string>
+    <string name="desc_welcome_dash">visualize realtime updates from your business.</string>
+    <string name="welcome_dashboard_image">Welcome Dashboard Image</string>
+    <string name="or">OR</string>
+    <string name="create_account">Create new account</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="sms">SMS</string>
+    <string name="mail">Mail</string>
+    <string name="communication">Communication</string>
+
+    <string name="profile">Profile</string>
+    <string name="permissions">Permissions</string>
+    <string name="email_permission">Email Permission</string>
+    <string name="user_posts_permission">User Posts Permission</string>
+    <string name="make_post_permission">Make Post Permission</string>
+    <string name="app_permission">Entire App Permission</string>
+    <string name="no_fb_review">Permissions Granted without FB Review</string>
+    <string name="fb_review">Permissions Requiring FB Review</string>
+    <string name="no_email_perm">Email permission not granted</string>
+    <string name="title_activity_customers_map">CustomersMapActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_item_detail_host">ItemDetailHostActivity</string>
+
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="menu_sales">Sales</string>
+    <string name="menu_settings">Settings</string>
+    <string name="about">About</string>
+    <string name="share">Share</string>
+    <string name="cancel">Cancel</string>
+    <string name="lifetime">Lifetime</string>
+    <string name="year_to_date">Year To Date</string>
+    <string name="last_month">Last Month</string>
+    <string name="this_month">This Month</string>
+    <string name="this_week">This Week</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="today">Today</string>
+    <string name="custom_range">Custom Range</string>
+    <string name="choose_from_library">Choose from Library</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="sign_in">Sign In</string>
+
+    <string name="com_facebook_smart_device_instructions">To connect your account, open the Facebook app on your mobile device and check for notifications.</string>
+    <string name="com_facebook_smart_device_instructions_or">- OR -</string>
+    <string name="debug_notification_uri_query_value_off">off</string>
+    <string name="debug_notification_uri_query_value_on">on</string>
+    <string name="PHP_TRANS_USER_BUTTON_LOGOUT">Log out</string>
+    <string name="PHP_TRANS_USER_BUTTON_LOGIN">Log in</string>
+    <string name="PHP_TRANS_USER_BUTTON_REGISTER">Register</string>
+    <string name="PHP_TRANS_USER_BUTTON_SEND">Send</string>
+    <string name="PHP_TRANS_USER_DIALOG_DELETE_ACCOUNT_SUCCESSFUL">The account has been successfully deleted.</string>
+    <string name="PHP_TRANS_PORTABLE_FAVOURITE_COMPETITIONS">Favourite competitions</string>
+    <string name="PHP_TRANS_PORTABLE_MYGAMES">My Games</string>
+    <string name="PHP_TRANS_PORTABLE_MYTEAMS">My Teams</string>
+    <string name="PHP_TRANS_USER_BUTTON_DELETE_ACCOUNT">Delete account</string>
+    <string name="PHP_TRANS_PORTABLE_SETTINGS_FEEDBACK_SUBJECT">Subject</string>
+    <string name="PHP_TRANS_PORTABLE_SETTINGS_FEEDBACK_TEXT">Your feedback</string>
+    <string name="PHP_TRANS_USER_EMAIL">E-mail</string>
+    <string name="PHP_TRANS_USER_LOGIN">Login</string>
+    <string name="PHP_TRANS_USER_LOGIN_BLOCK_FORGOTTEN_PASSWORD_TEXT">Did you forget your password?</string>
+    <string name="PHP_TRANS_USER_LOGIN_FACEBOOK">Connect with Facebook</string>
+    <string name="PHP_TRANS_USER_LOGIN_GOOGLE">Connect with Google</string>
+    <string name="PHP_TRANS_USER_LOGIN_SUCCESSFUL">You have logged in successfully.</string>
+    <string name="PHP_TRANS_USER_LOGOUT_CONFIRMATION">Are you sure you want to log out?</string>
+    <string name="PHP_TRANS_USER_LOGOUT_SUCCESSFUL">You were logged out successfully.</string>
+    <string name="PHP_TRANS_USER_NEW_TERMS_MSG">Please pay attention to our new terms of use. There are no big changes for you, we just had to update the text so that it meets conditions of the new European legislation. We kindly ask you to agree with these new conditions.</string>
+    <string name="PHP_TRANS_USER_NEW_TERMS_TITLE">New terms of use</string>
+    <string name="PHP_TRANS_USER_PASSWORD">Password</string>
+    <string name="PHP_TRANS_USER_PASSWORD_RETYPE">Confirm password</string>
+    <string name="PHP_TRANS_USER_REGISTRATION">Registration</string>
+    <string name="PHP_TRANS_USER_REGISTRATION_SUCCESSFUL">You have registered successfully.</string>
+    <string name="PHP_TRANS_USER_REGISTRATION_SUCCESSFUL_ADDITIONAL_TEXT">"ATTENTION: We have sent you an activation e-mail! Please check your mailbox and click the activation link included in the message.
+
+If you don't receive our activation e-mail within 20 minutes, you might find our message in the SPAM folder of your mailbox.
+
+If you fail to find our e-mail anyway, please contact us at support@flashscore.com."</string>
+    <string name="PHP_TRANS_PORTABLE_REGISTER">Sign Up</string>
+    <string name="PHP_TRANS_PORTABLE_REGISTER_QUESTION">Not yet registered?</string>
+    <string name="PHP_TRANS_LOADING">Loading...</string>
+    <string name="PHP_TRANS_THEME_NORMAL">Theme</string>
+    <string name="PHP_TRANS_PORTABLE_SETTINGS_PUSH_LABEL">Push notifications</string>
+    <string name="PHP_TRANS_NOTIFICATION_SETTINGS_NOTIFICATION_SETTINGS">Notifications settings</string>
+    <string name="PHP_TRANS_TEXT_TO_SPEECH_HELPSCREEN_TITLE">Voice notifications</string>
+    <string name="PHP_TRANS_PORTABLE_ERROR_NO_CONNECTION_BUTTON">Try again</string>
+    <string name="PHP_TRANS_PORTABLE_ERROR_NO_CONNECTION_MESSAGE">"Requested data couldn't be loaded."</string>
+    <string name="PHP_TRANS_PORTABLE_ERROR_NO_CONNECTION_TITLE">Something went wrong</string>
+    <string name="PHP_TRANS_USER_GDPR_PERSONALIZED_ADVERTISING_EXPLANATION">With this option turned on, relevant ads matching your interests will be displayed in the app. Please note that this option only affects the advertisement content; regardless your setting ads will be displayed in the app.</string>
+    <string name="PHP_TRANS_USER_GDPR_ANALYTICS_EXPLANATION">"With this option turned on, you help us better understand what your preferences are. Thanks to this feature we are able to develop our app with regard to our users' preferences."</string>
+    <string name="PHP_TRANS_AGREE">I agree</string>
+    <string name="developer_options">Developer options</string>
+    <string name="PHP_TRANS_PORTABLE_SETTINGS_OTHER_LABEL">Other</string>
+</resources>

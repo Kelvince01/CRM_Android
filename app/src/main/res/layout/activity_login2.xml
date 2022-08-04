@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="?background"
+    android:focusableInTouchMode="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        layout="@layout/actionbar_container" />
+    <Button
+        android:id="@+id/loginFacebook"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/spacing_xl"
+        android:text="@string/PHP_TRANS_USER_LOGIN_FACEBOOK"
+        style="@style/LoginButton.Facebook" />
+    <Button
+        android:id="@+id/loginGoogle"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/spacing_m"
+        android:text="@string/PHP_TRANS_USER_LOGIN_GOOGLE"
+        style="@style/LoginButton.Google" />
+    <include
+        android:id="@+id/loginEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_xl"
+        android:layout_marginTop="32.0dip"
+        android:layout_marginRight="@dimen/spacing_xl"
+        layout="@layout/input_view_email" />
+    <include
+        android:id="@+id/loginPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_xl"
+        android:layout_marginTop="@dimen/spacing_m"
+        android:layout_marginRight="@dimen/spacing_xl"
+        layout="@layout/input_view_password" />
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_marginTop="@dimen/spacing_m"
+        android:text="@string/PHP_TRANS_USER_BUTTON_LOGIN"
+        style="@style/PrimaryButton" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_marginTop="32.0dip"
+        android:text="@string/PHP_TRANS_PORTABLE_REGISTER_QUESTION"
+        style="@style/RegisterTextNormal.RegisterQuestion" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/registerButton"
+        android:paddingTop="@dimen/register_clickable_vertical_padding"
+        android:paddingBottom="@dimen/register_clickable_vertical_padding"
+        android:layout_marginTop="@dimen/spacing_s"
+        android:text="@string/PHP_TRANS_PORTABLE_REGISTER"
+        android:paddingStart="@dimen/spacing_m"
+        android:paddingEnd="@dimen/spacing_m"
+        style="@style/ActionTextBold" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/recoverPassword"
+        android:paddingTop="@dimen/register_clickable_vertical_padding"
+        android:paddingBottom="@dimen/register_clickable_vertical_padding"
+        android:layout_marginTop="24.0dip"
+        android:text="@string/PHP_TRANS_USER_LOGIN_BLOCK_FORGOTTEN_PASSWORD_TEXT"
+        android:paddingStart="@dimen/spacing_m"
+        android:paddingEnd="@dimen/spacing_m"
+        style="@style/RegisterTextNormal.RecoverPassword" />
+</LinearLayout>

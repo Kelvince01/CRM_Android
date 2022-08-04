@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/imageLargeIcon"
+        android:visibility="gone"
+        android:layout_width="36.0dip"
+        android:layout_height="36.0dip"
+        android:layout_marginLeft="12.0dip"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
+        android:ellipsize="end"
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:layout_toLeftOf="@id/imageLargeIcon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:textAppearance="@style/TextAppearance.Compat.Notification"
+        android:ellipsize="end"
+        android:id="@+id/message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:layout_toLeftOf="@id/imageLargeIcon"
+        android:layout_below="@id/title"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:id="@+id/imageBig"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_below="@id/message" />
+</RelativeLayout>

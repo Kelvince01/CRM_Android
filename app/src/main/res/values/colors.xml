@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#d3d3d3</color>
+    <color name="colorPrimary">#2E67CC</color>
+    <color name="colorPrimaryInvariant">#5389E6</color>
+    <color name="colorPrimaryDark">#AD1457</color>
+    <color name="colorAccent">#F57C00</color>
+    <color name="button_color">#1E573B</color>
+    <color name="accent">#FF4081</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="shimmer_placeholder">#dddddd</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="black_shade_1">#0e2433</color>
+    <color name="black_shade_2">#1C4966</color>
+
+    <color name="black_shade_3">#22252D</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#296D98</color>
+
+    <color name="light_blue_shade_1">#296D98</color>
+    <color name="gray">#424242</color>
+    <color name="yellow">#ffa500</color>
+    <color name="dark_blue_shade">#0D2162</color>
+    <color name="dark_blue_shade_2">#17388E</color>
+    <color name="light_blue_shade">#12B2E6</color>
+    <color name="light_grey">#EFEBE9</color>
+
+    <color name="actionbar_background">@color/fs_secondary_1</color>
+    <color name="fs_secondary_1">@color/fs_secondary_1_light</color>
+    <color name="fs_secondary_1_light">#ff001e28</color>
+    <color name="button_disabled_background">@color/fs_support_2_light</color>
+    <color name="fs_support_2_light">#ffc8cdcd</color>
+    <color name="fs_secondary_3">@color/fs_secondary_3_light</color>
+    <color name="fs_secondary_3_light">#ff0f2d37</color>
+    <color name="background">@color/fs_support_5</color>
+    <color name="fs_support_5">@color/fs_support_5_light</color>
+    <color name="fs_support_5_light">#ffffffff</color>
+    <color name="fs_red_clicked">#ffb80305</color>
+    <color name="fs_red">#ffdc0000</color>
+    <color name="fs_support_4">@color/fs_support_4_light</color>
+    <color name="fs_support_4_dark">#ffc8cdcd</color>
+    <color name="fs_support_4_inverse">@color/fs_support_4_dark</color>
+    <color name="fs_support_4_light">#ff555e61</color>
+    <color name="fs_text_lo_contrast_color">@color/fs_secondary_3_light</color>
+    <color name="fs_support_1">@color/fs_support_1_light</color>
+    <color name="fs_support_1_light">#ffeeeeee</color>
+    <color name="input_text_color">@color/fs_secondary_1_light</color>
+    <color name="input_box_bg">@color/fs_support_1</color>
+    <color name="form_color_hint_stroke_focused">@color/fs_secondary_3_light</color>
+    <color name="form_color_hint_stroke">@color/fs_support_2_light</color>
+    <color name="dropdown_arrow_active">@color/fs_secondary_3</color>
+    <color name="form_focused">@color/fs_secondary_3_light</color>
+    <color name="form_color_hint">@color/fs_support_4_light</color>
+    <color name="color_error">@color/fs_red</color>
+    <color name="facebook_button">#ff4267b2</color>
+    <color name="google_button">#ff4285f4</color>
+    <color name="preview_gradient_start">@color/fs_support_5_0</color>
+    <color name="fs_support_5_0">@color/fs_support_5_light_0</color>
+    <color name="fs_support_5_light_0">#00ffffff</color>
+    <color name="screen_background">@color/fs_support_5</color>
+    <color name="icon_primary">@color/fs_secondary_1</color>
+    <color name="fs_support_3">@color/fs_support_3_light</color>
+    <color name="fs_support_3_light">#ff999999</color>
+    <color name="fs_primary">#ffff0046</color>
+    <color name="button_disabled_text">@color/fs_support_3_light</color>
+    <color name="survicate_text_primary">#ff7f8c8d</color>
+    <color name="fs_support_2">@color/fs_support_2_light</color>
+    <color name="com_facebook_blue">#ff1877f2</color>
+    <color name="com_facebook_device_auth_text">#ff90949c</color>
+    <color name="com_smart_login_code">#ff3c6499</color>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        layout="@layout/actionbar_container" />
+    <include
+        android:id="@+id/registration_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_xl"
+        android:layout_marginTop="@dimen/spacing_xl"
+        android:layout_marginRight="@dimen/spacing_xl"
+        layout="@layout/input_view_email" />
+    <include
+        android:id="@+id/registration_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_xl"
+        android:layout_marginTop="@dimen/spacing_m"
+        android:layout_marginRight="@dimen/spacing_xl"
+        layout="@layout/input_view_password" />
+    <include
+        android:id="@+id/registration_password_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_xl"
+        android:layout_marginTop="@dimen/spacing_m"
+        android:layout_marginRight="@dimen/spacing_xl"
+        layout="@layout/input_view_password_confirm" />
+    <Button
+        android:id="@+id/registration_button"
+        android:layout_marginTop="@dimen/spacing_m"
+        android:text="@string/PHP_TRANS_USER_BUTTON_REGISTER"
+        style="@style/PrimaryButton" />
+    <TextView
+        android:textColorHighlight="@color/preview_gradient_start"
+        android:gravity="center"
+        android:id="@+id/privacy_policy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_m"
+        android:layout_marginTop="@dimen/spacing_m"
+        android:layout_marginRight="@dimen/spacing_m"
+        android:layout_marginStart="@dimen/spacing_m"
+        android:layout_marginEnd="@dimen/spacing_m" />
+</LinearLayout>

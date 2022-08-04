@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="nav_header_height">200dp</dimen>
+    <dimen name="nav_header_vertical_spacing">20dp</dimen>
+    <dimen name="_20sdp">20dp</dimen>
+    <dimen name="_10sdp">10dp</dimen>
+    <dimen name="_16sdp">16dp</dimen>
+    <dimen name="_36sdp">36dp</dimen>
+    <dimen name="_50sdp">50dp</dimen>
+    <dimen name="_40sdp">40dp</dimen>
+    <dimen name="_90sdp">90dp</dimen>
+    <dimen name="_256sdp">256dp</dimen>
+    <dimen name="_56sdp">56dp</dimen>
+    <dimen name="_30sdp">30dp</dimen>
+    <dimen name="_14sdp">14dp</dimen>
+    <dimen name="_15sdp">15dp</dimen>
+
+    <dimen name="activity_horizontal_margin">4dp</dimen>
+    <dimen name="activity_vertical_margin">4dp</dimen>
+    <dimen name="margin_small">2dp</dimen>
+    <dimen name="margin_medium">4dp</dimen>
+
+    <dimen name="text_size_big">18sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="item_width">200dp</dimen>
+    <dimen name="app_bar_height">200dp</dimen>
+    <!--dimen name="text_margin">16dp</dimen-->
+    <dimen name="container_margin">8dp</dimen>
+    <dimen name="container_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="item_transform_image_length">48dp</dimen>
+    <dimen name="reflow_text_block_max_percent">1</dimen>
+    <dimen name="reflow_text_block_horizontal_gap">8dp</dimen>
+    <dimen name="reflow_text_title_size">22sp</dimen>
+    <dimen name="reflow_text_description_size">13sp</dimen>
+
+    <dimen name="actionBarSize">56.0dip</dimen>
+    <dimen name="action_bar_size">16.0dip</dimen>
+    <!--dimen name="activity_vertical_margin">16.0dip</dimen-->
+    <dimen name="ad_banner_height">50.0dip</dimen>
+    <dimen name="ad_banner_width">320.0dip</dimen>
+    <dimen name="ad_text_size">8.0dip</dimen>
+    <dimen name="app_icon_corner_radius">16.0dip</dimen>
+
+    <dimen name="spacing_l">12.0dip</dimen>
+    <dimen name="spacing_m">8.0dip</dimen>
+    <dimen name="spacing_s">4.0dip</dimen>
+    <dimen name="spacing_xl">16.0dip</dimen>
+    <dimen name="spacing_xs">2.0dip</dimen>
+    <dimen name="spacing_xxl">24.0dip</dimen>
+    <dimen name="spacing_xxxl">32.0dip</dimen>
+
+    <dimen name="badge_radius">4.0dip</dimen>
+    <dimen name="border">2.0dip</dimen>
+    <dimen name="borderNegative">-2.0dip</dimen>
+    <dimen name="borderThin">1.0dip</dimen>
+    <dimen name="borderThinNegative">-1.0dip</dimen>
+
+    <dimen name="text_l">18.0dip</dimen>
+    <dimen name="text_m">16.0dip</dimen>
+    <dimen name="text_margin">4.0dip</dimen>
+    <dimen name="text_s">14.0dip</dimen>
+    <dimen name="text_search">20.0dip</dimen>
+    <dimen name="text_xl">20.0dip</dimen>
+    <dimen name="text_xs">12.0dip</dimen>
+    <dimen name="text_xxl">22.0dip</dimen>
+    <dimen name="text_xxs">10.0dip</dimen>
+    <dimen name="textview_padding">10.0dip</dimen>
+    <dimen name="title_text_size">24.0dip</dimen>
+    <dimen name="tooltip_corner_radius">2.0dip</dimen>
+    <dimen name="tooltip_horizontal_padding">16.0dip</dimen>
+    <dimen name="tooltip_margin">8.0dip</dimen>
+    <dimen name="tooltip_precise_anchor_extra_offset">8.0dip</dimen>
+    <dimen name="tooltip_precise_anchor_threshold">96.0dip</dimen>
+    <dimen name="tooltip_vertical_padding">6.5dip</dimen>
+    <dimen name="tooltip_y_offset_non_touch">0.0dip</dimen>
+    <dimen name="tooltip_y_offset_touch">16.0dip</dimen>
+
+    <dimen name="btn_layout_height">36.0dip</dimen>
+    <dimen name="btn_padding">17.0dip</dimen>
+    <dimen name="button_min_width">240.0dip</dimen>
+
+    <dimen name="switch_layout_height">14.0dip</dimen>
+    <dimen name="switch_layout_width">50.0dip</dimen>
+    <dimen name="settings_user_section_margin">24.0dip</dimen>
+    <dimen name="settings_row_height">48.0dip</dimen>
+    <dimen name="settings_user_info_container">102.0dip</dimen>
+    <dimen name="settings_user_section_divider_margin">4.0dip</dimen>
+    <dimen name="component_item_layout_height">48.0dip</dimen>
+    <dimen name="cursor_width">1.0dip</dimen>
+    <dimen name="corners_radius_large">8.0dip</dimen>
+    <dimen name="stroke_width_focused">1.0dip</dimen>
+    <dimen name="error_text_space">6.0dip</dimen>
+    <dimen name="form_input_layout_height">60.0dip</dimen>
+    <dimen name="tab_text_padding">8.0dip</dimen>
+    <dimen name="register_clickable_vertical_padding">6.0dip</dimen>
+    <dimen name="survicate_question_item_text_size">15.0sp</dimen>
+    <dimen name="survicate_question_item_horizontal_padding">14.0dip</dimen>
+    <dimen name="survicate_question_item_margin_top">2.0dip</dimen>
+    <dimen name="survicate_question_item_margin_bottom">8.0dip</dimen>
+    <dimen name="survicate_question_item_horizontal_margin">2.0dip</dimen>
+    <dimen name="survicate_element_radius">24.0dip</dimen>
+    <dimen name="survicate_question_card_elevation">2.0dip</dimen>
+    <dimen name="survicate_question_item_vertical_padding">8.0dip</dimen>
+    <dimen name="survicate_question_item_min_height">48.0dip</dimen>
+    <dimen name="dialog_title_bar_height">56.0dip</dimen>
+    <dimen name="network_error_dialog_max_width">328.0dip</dimen>
+    <dimen name="com_facebook_auth_dialog_corner_radius_oversized">4.0dip</dimen>
+    <dimen name="com_facebook_auth_dialog_corner_radius">2.0dip</dimen>
+</resources>

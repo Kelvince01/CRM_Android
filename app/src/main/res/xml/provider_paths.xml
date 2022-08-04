@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path
+        name="external_files"
+        path="." />
+    <files-path
+        name="screenshot"
+        path="screenshot/" />
+    <files-path
+        name="installation"
+        path="installation/" />
+    <files-path
+        name="log"
+        path="log/" />
+    <files-path
+        name="migration"
+        path="migration/" />
+    <external-path
+        name="screenshot-ext"
+        path="crm/screenshot/" />
+</paths>
